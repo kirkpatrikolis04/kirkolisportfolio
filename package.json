@@ -1,0 +1,16 @@
+{
+  "name": "oliskirkportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "Homepage": "https://kirkpatrikolis04.github.io/kirkolisportfolio",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
