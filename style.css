@@ -60,6 +60,19 @@
 .l-footer__row .col:nth-child(2), .l-footer__row .col {
     width: auto;
 }
+.tickercontainer {
+    height: unset !important;
+}
+.marquee {
+    display: flex;
+}
+.marquee li {
+    min-width: 360px;
+    padding: 0 !important;
+}
+.marquee li img {
+    height: 100%;
+}
 @media (max-width: 1023px) {
     .top .services__content .row {
         flex-direction: column;
@@ -70,11 +83,21 @@
     } 
 }
 @media (max-width: 981px) {
+    .marquee li {
+        max-width: 325px;
+        min-width: 325px;
+    }
     .top .skills__content .skillset {
         margin-top: 0;
     }
     .c-heading01--sub {
         line-height: 40px;
+    }
+    #projects .filter-wrap .flex.row {
+        flex-wrap: wrap;
+        gap: 22px;
+        align-items: center;
+        justify-content: center;
     }
 } 
 @media (max-width: 767px) {

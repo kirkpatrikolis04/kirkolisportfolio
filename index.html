@@ -539,6 +539,7 @@
               <div class="filter" data-filter=".html">HTML/CSS/JS</div>
               <div class="filter" data-filter=".php">PHP</div>
               <div class="filter" data-filter=".wordpress">WORDPRESS</div>
+              <div class="filter" data-filter=".webflow">WEBFLOW</div>
               <!-- <div class="filter__indicator"></div> -->
             </div>
           </div>
@@ -565,6 +566,20 @@
                   <a href="https://www.vbotickets.com/features/pos-point-of-sale/" target="_blank">VISIT SITE</a>
                 </div>
               </div>
+              <div class="mix webflow col" data-my-order="1">
+                <img src="public/release/tiny/joegallego.png">
+                <div class="card">
+                  <p class="text">DR. Joe Gallego</p>
+                  <a href="https://dr-joe-gallego.webflow.io/" target="_blank">VISIT SITE</a>
+                </div>
+              </div>
+              <div class="mix webflow col" data-my-order="1">
+                <img src="public/release/tiny/teasurgery.png">
+                <div class="card">
+                  <p class="text">Tea Surgery</p>
+                  <a href="https://www.teasurgery.com/" target="_blank">VISIT SITE</a>
+                </div>
+              </div>
               <div class="mix html col" data-my-order="1">
                 <img src="public/release/tiny/jc-logic.png">
                 <div class="card">
@@ -584,6 +599,13 @@
                 <div class="card">
                   <p class="text">Proqio</p>
                   <a href="https://go.proqio.com/" target="_blank">VISIT SITE</a>
+                </div>
+              </div>
+              <div class="mix html col" data-my-order="1">
+                <img src="public/release/tiny/cicanada.png">
+                <div class="card">
+                  <p class="text">CI CANADA</p>
+                  <a href="https://cicanada-website.web.app/" target="_blank">VISIT SITE</a>
                 </div>
               </div>
               <div class="mix html col" data-my-order="1">
@@ -703,18 +725,18 @@
         </div>
 
         <div class="swiper-container swiper--bottom">
-          <div class="swiper-wrapper">
-              <div class="swiper-slide">
+          <ul class="marquee">
+              <li>
                 <img src="public/release/tiny/eot1.png" alt="">
-              </div>
-              <div class="swiper-slide">
+              </li>
+              <li>
                 <img src="public/release/tiny/udemy1.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
+              </li>
+              <li>
                 <img src="public/release/tiny/eot2.png" alt="">
-              </div>
-             <div class="swiper-slide"><img src="public/release/tiny/school1.png" alt=""></div>
-          </div>
+              </li>
+             <li><img src="public/release/tiny/school1.png" alt=""></li>
+          </ul>
         </div>
       </div>
         <div class="contact" id="contact">
@@ -843,7 +865,9 @@
     ></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="jquery.webticker.min.js"></script>
     <script src="public/release/ugly/all.js"></script>
+    <script src="script.js"></script>
     <script>
       AOS.init({
         once: true,
@@ -854,20 +878,19 @@
 
       $("#gallery").mixItUp({});
 
-      let SwiperBottom = new Swiper('.swiper--bottom', {
+      /* let SwiperBottom = new Swiper('.swiper--bottom', {
       spaceBetween: 0,
       centeredSlides: true,
       speed: 10000,
       autoplay: {
         delay: 1,
-        // reverseDirection: true
       },
       loop: true,
       loopedSlides: 4,
       slidesPerView:'auto',
       allowTouchMove: false,
       disableOnInteraction: true
-    });
+    }); */
     </script>
   </body>
 </html>
