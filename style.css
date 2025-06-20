@@ -65,13 +65,21 @@
 }
 .marquee {
     display: flex;
+    will-change: transform;
+    transform: translateZ(0);
+    contain: layout style paint;
 }
 .marquee li {
     min-width: 360px;
+    max-width: 360px;
     padding: 0 !important;
+    will-change: transform;
+    transform: translateZ(0);
 }
 .marquee li img {
     height: 100%;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 @media (max-width: 1023px) {
     .top .services__content .row {
