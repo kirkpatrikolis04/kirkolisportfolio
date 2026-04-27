@@ -12,6 +12,19 @@
 .services__content .c-card__icon {
     top: -47px;
 }
+#gallery {
+    gap: 13px !important;
+}
+@media(min-width: 768px) {
+    .top .projects .gallery .col {
+        width: 32% !important;
+    }
+}
+@media(min-width: 1023px) {
+    .top .projects .filter {
+        margin: 0 5px !important;
+    }
+}
 .filter-buttons button {
     color: #fff;
     cursor: pointer;
